@@ -1,0 +1,70 @@
+/* *{
+    margin: 5px;
+    padding:10px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: capitalize; 
+ } */
+    .center{
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        justify-content: left;
+    }
+    .box{
+        margin: 5px;
+        padding:5px;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        letter-spacing: 1px;
+                                        
+        width: 360px;
+        height: 300px;
+        border-radius: 20px;
+        background: #36027E;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.365);
+        
+    }
+
+li{
+    width: 250px;
+    color: #36027E;
+    padding: 10px;
+    margin: 15px;
+    background: #FFC327;
+    list-style: none;
+    /* border-radius: 16px; */
+    cursor: pointer;
+   transition-duration: all .4s;
+     position: relative;
+
+}
+li:hover{
+    transform: translate(20px);
+}
+li::before, li::after{
+    content: "";
+    position: absolute;
+    background:#FFFF99;
+    transition: all .4s;
+}
+li::before{
+    width: 20px;
+    height: 100%;
+    top: 0;
+    left: -30px;
+}
+li::after{
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+}
+/* EFECTO BRILLO */
+/* li::hover::before,li::hover::after{
+    background: aqua;
+    box-shadow: 0 0 10px aquamarine;
+} */
